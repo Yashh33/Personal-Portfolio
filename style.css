@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(164, 164, 164);
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 27px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 27px;
+    padding: 36px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.main {
+    width: 90vw;
+    /* background-color: rgb(213, 213, 12); */
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: blue; */
+    height: 58vh;
+    width: 80vw;
+    margin: 51px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.about {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+/* .moreabout{
+    font-size: 35px;
+} */
+/* .downloadcv{
+    margin-top: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.contactme{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+} */
+.buttons {
+    margin-top: 35px;
+}
+
+.buttons button {
+    /* margin-top: 35px; */
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: grey;
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: grey
+}
+
+.btn-sm button {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: grey;
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-sm button:hover {
+    background-color: white;
+    color: grey
+}
+
+.smallbutton {
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 10px;
+}
+
+.smallbutton:hover {
+    /* padding: 5px; */
+    /* border-radius: 7px; */
+    font-size: 12px;
+}
+
+.devpic img {
+    width: 320px;
+    height: 58vh;
+
+}
+
+.contactform {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0 34px;
+    /* padding-top: 144px; */
+    margin: 10px 88px;
+}
+
+.contactform h1 {
+    text-align: center;
+}
+
+.contactform form div {
+    padding: 10px 0;
+}
+
+#clientemail,
+#clientphone,
+#clientname,
+#clientreq {
+    /* width: 16vw; */
+    border-radius: 5px;
+    margin: 6px 0px 0px 0px;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 12px;
+}
+
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkboxclass {
+    display: flex;
+    flex-direction: row;
+}
+
+#checkboxclass label {
+    margin-left: 5px;
+}
+.blockcontainer{
+    margin: 50px 88px;
+}
+.blogitem {
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogitem h2 {
+    margin: 23px;
+}
+
+.devinfo h1,
+.devinfo h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.devinfo p {
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 10px;
+}
+
+.skillcontainer {
+    padding-left: 15px;
+}
+
+.skillcontainer h3 {
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    /* margin-left: 10px; */
+}
+
+.skillitem {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.skill {
+    height: 10px;
+    width: 400px;
+    background-color: rgb(164, 164, 164);
+    border-radius: 10px;
+
+}
+
+.hundred {
+    width: 400px;
+}
+
+.seventy-five {
+    width: 350px;
+}
+
+.fifty {
+    width: 250px;
+}
+
+.sidebargo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 140px;
+    /* margin-bottom: 14px; */
+    margin-top: 13px;  
+}
+
+.menubar {
+    width: 50px;
+}
+
+.aboutme{
+    margin: 10px 88px;
+}
+
+@media (max-width:786px) {
+    /* *{
+        background-color: red;
+    } */
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devpic{
+        display: none;
+    }
+    .aboutme,.blockcontainer,.contactform{
+        margin: 50px 8px;
+    }
+}
